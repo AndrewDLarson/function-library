@@ -9,21 +9,14 @@ const formatNumber = (numbers) => {
                     numberArray.splice(j, 0, ",");
                     j -= 3;
                 }
-                
             }
         }
     } else {
         let t = numberString.length;
         while (t - 3 > 0) {
-                    t -= 3;
-                    numberArray.splice(t, 0, ",");
-                }
-    }
-    
-    
+            t -= 3;
+            numberArray.splice(t, 0, ",");
+        }
+    } 
     return numberArray.join("")
 }
-
-
-
-
